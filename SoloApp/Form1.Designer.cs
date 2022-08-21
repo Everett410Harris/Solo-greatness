@@ -30,41 +30,41 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.searchBtn = new System.Windows.Forms.Button();
+            this.searchTb = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.addNewBtn = new System.Windows.Forms.Button();
+            this.displayBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
+            this.resetBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.bookedCb = new System.Windows.Forms.ComboBox();
+            this.mileageTb = new System.Windows.Forms.TextBox();
+            this.typeCb = new System.Windows.Forms.ComboBox();
+            this.colorTb = new System.Windows.Forms.TextBox();
+            this.engineTypeCb = new System.Windows.Forms.ComboBox();
+            this.yearCb = new System.Windows.Forms.ComboBox();
+            this.modelTb = new System.Windows.Forms.TextBox();
+            this.makeCb = new System.Windows.Forms.ComboBox();
+            this.licensePlateTb = new System.Windows.Forms.TextBox();
             this.licensePlateLabel = new System.Windows.Forms.Label();
             this.makeLabel = new System.Windows.Forms.Label();
-            this.modelLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.engineTypeLabel = new System.Windows.Forms.Label();
-            this.colorLabel = new System.Windows.Forms.Label();
-            this.yearLabel = new System.Windows.Forms.Label();
-            this.mileageLabel = new System.Windows.Forms.Label();
             this.typeLabel = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.searchBtn = new System.Windows.Forms.Button();
-            this.exitBtn = new System.Windows.Forms.Button();
-            this.resetBtn = new System.Windows.Forms.Button();
-            this.deleteBtn = new System.Windows.Forms.Button();
-            this.displayBtn = new System.Windows.Forms.Button();
-            this.addNewBtn = new System.Windows.Forms.Button();
+            this.mileageLabel = new System.Windows.Forms.Label();
+            this.modelLabel = new System.Windows.Forms.Label();
+            this.yearLabel = new System.Windows.Forms.Label();
+            this.colorLabel = new System.Windows.Forms.Label();
+            this.engineTypeLabel = new System.Windows.Forms.Label();
+            this.bookedLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,11 +80,27 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.searchBtn);
-            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.searchTb);
             this.panel2.Location = new System.Drawing.Point(22, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1296, 74);
             this.panel2.TabIndex = 0;
+            // 
+            // searchBtn
+            // 
+            this.searchBtn.Location = new System.Drawing.Point(793, 17);
+            this.searchBtn.Name = "searchBtn";
+            this.searchBtn.Size = new System.Drawing.Size(179, 44);
+            this.searchBtn.TabIndex = 21;
+            this.searchBtn.Text = "Search";
+            this.searchBtn.UseVisualStyleBackColor = true;
+            // 
+            // searchTb
+            // 
+            this.searchTb.Location = new System.Drawing.Point(387, 17);
+            this.searchTb.Name = "searchTb";
+            this.searchTb.Size = new System.Drawing.Size(342, 44);
+            this.searchTb.TabIndex = 20;
             // 
             // dataGridView1
             // 
@@ -97,24 +113,83 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.DarkOrange;
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Location = new System.Drawing.Point(12, 716);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1339, 97);
             this.panel3.TabIndex = 11;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.addNewBtn);
+            this.panel5.Controls.Add(this.displayBtn);
+            this.panel5.Controls.Add(this.deleteBtn);
+            this.panel5.Controls.Add(this.resetBtn);
+            this.panel5.Controls.Add(this.exitBtn);
+            this.panel5.Location = new System.Drawing.Point(22, 10);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1296, 74);
+            this.panel5.TabIndex = 1;
+            // 
+            // addNewBtn
+            // 
+            this.addNewBtn.Location = new System.Drawing.Point(20, 13);
+            this.addNewBtn.Name = "addNewBtn";
+            this.addNewBtn.Size = new System.Drawing.Size(211, 44);
+            this.addNewBtn.TabIndex = 26;
+            this.addNewBtn.Text = "Add New";
+            this.addNewBtn.UseVisualStyleBackColor = true;
+            // 
+            // displayBtn
+            // 
+            this.displayBtn.Location = new System.Drawing.Point(270, 13);
+            this.displayBtn.Name = "displayBtn";
+            this.displayBtn.Size = new System.Drawing.Size(237, 44);
+            this.displayBtn.TabIndex = 25;
+            this.displayBtn.Text = "Display";
+            this.displayBtn.UseVisualStyleBackColor = true;
+            // 
+            // deleteBtn
+            // 
+            this.deleteBtn.Location = new System.Drawing.Point(546, 13);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(237, 44);
+            this.deleteBtn.TabIndex = 24;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            // 
+            // resetBtn
+            // 
+            this.resetBtn.Location = new System.Drawing.Point(822, 13);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(216, 44);
+            this.resetBtn.TabIndex = 23;
+            this.resetBtn.Text = "Reset";
+            this.resetBtn.UseVisualStyleBackColor = true;
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.Location = new System.Drawing.Point(1077, 13);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(202, 44);
+            this.exitBtn.TabIndex = 22;
+            this.exitBtn.Text = "Exit";
+            this.exitBtn.UseVisualStyleBackColor = true;
+            // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.comboBox5);
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Controls.Add(this.comboBox4);
-            this.panel4.Controls.Add(this.textBox3);
-            this.panel4.Controls.Add(this.comboBox3);
-            this.panel4.Controls.Add(this.comboBox2);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Controls.Add(this.comboBox1);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.bookedLabel);
+            this.panel4.Controls.Add(this.bookedCb);
+            this.panel4.Controls.Add(this.mileageTb);
+            this.panel4.Controls.Add(this.typeCb);
+            this.panel4.Controls.Add(this.colorTb);
+            this.panel4.Controls.Add(this.engineTypeCb);
+            this.panel4.Controls.Add(this.yearCb);
+            this.panel4.Controls.Add(this.modelTb);
+            this.panel4.Controls.Add(this.makeCb);
+            this.panel4.Controls.Add(this.licensePlateTb);
             this.panel4.Controls.Add(this.licensePlateLabel);
             this.panel4.Controls.Add(this.makeLabel);
             this.panel4.Controls.Add(this.typeLabel);
@@ -127,6 +202,74 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1325, 248);
             this.panel4.TabIndex = 12;
+            // 
+            // bookedCb
+            // 
+            this.bookedCb.FormattingEnabled = true;
+            this.bookedCb.Location = new System.Drawing.Point(1103, 184);
+            this.bookedCb.Name = "bookedCb";
+            this.bookedCb.Size = new System.Drawing.Size(219, 46);
+            this.bookedCb.TabIndex = 19;
+            // 
+            // mileageTb
+            // 
+            this.mileageTb.Location = new System.Drawing.Point(1103, 11);
+            this.mileageTb.Name = "mileageTb";
+            this.mileageTb.Size = new System.Drawing.Size(219, 44);
+            this.mileageTb.TabIndex = 18;
+            // 
+            // typeCb
+            // 
+            this.typeCb.FormattingEnabled = true;
+            this.typeCb.Location = new System.Drawing.Point(1103, 100);
+            this.typeCb.Name = "typeCb";
+            this.typeCb.Size = new System.Drawing.Size(219, 46);
+            this.typeCb.TabIndex = 17;
+            // 
+            // colorTb
+            // 
+            this.colorTb.Location = new System.Drawing.Point(696, 189);
+            this.colorTb.Name = "colorTb";
+            this.colorTb.Size = new System.Drawing.Size(219, 44);
+            this.colorTb.TabIndex = 16;
+            // 
+            // engineTypeCb
+            // 
+            this.engineTypeCb.FormattingEnabled = true;
+            this.engineTypeCb.Location = new System.Drawing.Point(696, 100);
+            this.engineTypeCb.Name = "engineTypeCb";
+            this.engineTypeCb.Size = new System.Drawing.Size(219, 46);
+            this.engineTypeCb.TabIndex = 15;
+            // 
+            // yearCb
+            // 
+            this.yearCb.FormattingEnabled = true;
+            this.yearCb.Location = new System.Drawing.Point(696, 14);
+            this.yearCb.Name = "yearCb";
+            this.yearCb.Size = new System.Drawing.Size(219, 46);
+            this.yearCb.TabIndex = 14;
+            // 
+            // modelTb
+            // 
+            this.modelTb.Location = new System.Drawing.Point(245, 186);
+            this.modelTb.Name = "modelTb";
+            this.modelTb.Size = new System.Drawing.Size(219, 44);
+            this.modelTb.TabIndex = 13;
+            // 
+            // makeCb
+            // 
+            this.makeCb.FormattingEnabled = true;
+            this.makeCb.Location = new System.Drawing.Point(245, 100);
+            this.makeCb.Name = "makeCb";
+            this.makeCb.Size = new System.Drawing.Size(219, 46);
+            this.makeCb.TabIndex = 12;
+            // 
+            // licensePlateTb
+            // 
+            this.licensePlateTb.Location = new System.Drawing.Point(245, 14);
+            this.licensePlateTb.Name = "licensePlateTb";
+            this.licensePlateTb.Size = new System.Drawing.Size(219, 44);
+            this.licensePlateTb.TabIndex = 11;
             // 
             // licensePlateLabel
             // 
@@ -146,48 +289,14 @@
             this.makeLabel.TabIndex = 3;
             this.makeLabel.Text = "Make";
             // 
-            // modelLabel
+            // typeLabel
             // 
-            this.modelLabel.AutoSize = true;
-            this.modelLabel.Location = new System.Drawing.Point(7, 192);
-            this.modelLabel.Name = "modelLabel";
-            this.modelLabel.Size = new System.Drawing.Size(120, 38);
-            this.modelLabel.TabIndex = 4;
-            this.modelLabel.Text = "Model";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(245, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 44);
-            this.textBox1.TabIndex = 11;
-            // 
-            // engineTypeLabel
-            // 
-            this.engineTypeLabel.AutoSize = true;
-            this.engineTypeLabel.Location = new System.Drawing.Point(472, 108);
-            this.engineTypeLabel.Name = "engineTypeLabel";
-            this.engineTypeLabel.Size = new System.Drawing.Size(218, 38);
-            this.engineTypeLabel.TabIndex = 6;
-            this.engineTypeLabel.Text = "Engine Type";
-            // 
-            // colorLabel
-            // 
-            this.colorLabel.AutoSize = true;
-            this.colorLabel.Location = new System.Drawing.Point(472, 197);
-            this.colorLabel.Name = "colorLabel";
-            this.colorLabel.Size = new System.Drawing.Size(108, 38);
-            this.colorLabel.TabIndex = 7;
-            this.colorLabel.Text = "Color";
-            // 
-            // yearLabel
-            // 
-            this.yearLabel.AutoSize = true;
-            this.yearLabel.Location = new System.Drawing.Point(472, 14);
-            this.yearLabel.Name = "yearLabel";
-            this.yearLabel.Size = new System.Drawing.Size(94, 38);
-            this.yearLabel.TabIndex = 5;
-            this.yearLabel.Text = "Year";
+            this.typeLabel.AutoSize = true;
+            this.typeLabel.Location = new System.Drawing.Point(982, 103);
+            this.typeLabel.Name = "typeLabel";
+            this.typeLabel.Size = new System.Drawing.Size(96, 38);
+            this.typeLabel.TabIndex = 9;
+            this.typeLabel.Text = "Type";
             // 
             // mileageLabel
             // 
@@ -198,158 +307,50 @@
             this.mileageLabel.TabIndex = 8;
             this.mileageLabel.Text = "Mileage";
             // 
-            // typeLabel
+            // modelLabel
             // 
-            this.typeLabel.AutoSize = true;
-            this.typeLabel.Location = new System.Drawing.Point(982, 103);
-            this.typeLabel.Name = "typeLabel";
-            this.typeLabel.Size = new System.Drawing.Size(96, 38);
-            this.typeLabel.TabIndex = 9;
-            this.typeLabel.Text = "Type";
+            this.modelLabel.AutoSize = true;
+            this.modelLabel.Location = new System.Drawing.Point(7, 192);
+            this.modelLabel.Name = "modelLabel";
+            this.modelLabel.Size = new System.Drawing.Size(120, 38);
+            this.modelLabel.TabIndex = 4;
+            this.modelLabel.Text = "Model";
             // 
-            // label6
+            // yearLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(957, 192);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 38);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Booked";
+            this.yearLabel.AutoSize = true;
+            this.yearLabel.Location = new System.Drawing.Point(472, 14);
+            this.yearLabel.Name = "yearLabel";
+            this.yearLabel.Size = new System.Drawing.Size(94, 38);
+            this.yearLabel.TabIndex = 5;
+            this.yearLabel.Text = "Year";
             // 
-            // comboBox1
+            // colorLabel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(245, 100);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(219, 46);
-            this.comboBox1.TabIndex = 12;
+            this.colorLabel.AutoSize = true;
+            this.colorLabel.Location = new System.Drawing.Point(472, 197);
+            this.colorLabel.Name = "colorLabel";
+            this.colorLabel.Size = new System.Drawing.Size(108, 38);
+            this.colorLabel.TabIndex = 7;
+            this.colorLabel.Text = "Color";
             // 
-            // textBox2
+            // engineTypeLabel
             // 
-            this.textBox2.Location = new System.Drawing.Point(245, 186);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 44);
-            this.textBox2.TabIndex = 13;
+            this.engineTypeLabel.AutoSize = true;
+            this.engineTypeLabel.Location = new System.Drawing.Point(472, 108);
+            this.engineTypeLabel.Name = "engineTypeLabel";
+            this.engineTypeLabel.Size = new System.Drawing.Size(218, 38);
+            this.engineTypeLabel.TabIndex = 6;
+            this.engineTypeLabel.Text = "Engine Type";
             // 
-            // comboBox2
+            // bookedLabel
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(696, 14);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(219, 46);
-            this.comboBox2.TabIndex = 14;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(696, 100);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(219, 46);
-            this.comboBox3.TabIndex = 15;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(696, 189);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 44);
-            this.textBox3.TabIndex = 16;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(1103, 100);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(219, 46);
-            this.comboBox4.TabIndex = 17;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(1103, 11);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(219, 44);
-            this.textBox4.TabIndex = 18;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(1103, 184);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(219, 46);
-            this.comboBox5.TabIndex = 19;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.addNewBtn);
-            this.panel5.Controls.Add(this.displayBtn);
-            this.panel5.Controls.Add(this.deleteBtn);
-            this.panel5.Controls.Add(this.resetBtn);
-            this.panel5.Controls.Add(this.exitBtn);
-            this.panel5.Location = new System.Drawing.Point(22, 10);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1296, 74);
-            this.panel5.TabIndex = 1;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(387, 17);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(342, 44);
-            this.textBox5.TabIndex = 20;
-            // 
-            // searchBtn
-            // 
-            this.searchBtn.Location = new System.Drawing.Point(793, 17);
-            this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(179, 44);
-            this.searchBtn.TabIndex = 21;
-            this.searchBtn.Text = "Search";
-            this.searchBtn.UseVisualStyleBackColor = true;
-            // 
-            // exitBtn
-            // 
-            this.exitBtn.Location = new System.Drawing.Point(1077, 13);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(202, 44);
-            this.exitBtn.TabIndex = 22;
-            this.exitBtn.Text = "Exit";
-            this.exitBtn.UseVisualStyleBackColor = true;
-            // 
-            // resetBtn
-            // 
-            this.resetBtn.Location = new System.Drawing.Point(822, 13);
-            this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(216, 44);
-            this.resetBtn.TabIndex = 23;
-            this.resetBtn.Text = "Reset";
-            this.resetBtn.UseVisualStyleBackColor = true;
-            // 
-            // deleteBtn
-            // 
-            this.deleteBtn.Location = new System.Drawing.Point(546, 13);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(237, 44);
-            this.deleteBtn.TabIndex = 24;
-            this.deleteBtn.Text = "Delete";
-            this.deleteBtn.UseVisualStyleBackColor = true;
-            // 
-            // displayBtn
-            // 
-            this.displayBtn.Location = new System.Drawing.Point(270, 13);
-            this.displayBtn.Name = "displayBtn";
-            this.displayBtn.Size = new System.Drawing.Size(237, 44);
-            this.displayBtn.TabIndex = 25;
-            this.displayBtn.Text = "Display";
-            this.displayBtn.UseVisualStyleBackColor = true;
-            // 
-            // addNewBtn
-            // 
-            this.addNewBtn.Location = new System.Drawing.Point(20, 13);
-            this.addNewBtn.Name = "addNewBtn";
-            this.addNewBtn.Size = new System.Drawing.Size(211, 44);
-            this.addNewBtn.TabIndex = 26;
-            this.addNewBtn.Text = "Add New";
-            this.addNewBtn.UseVisualStyleBackColor = true;
+            this.bookedLabel.AutoSize = true;
+            this.bookedLabel.Location = new System.Drawing.Point(952, 187);
+            this.bookedLabel.Name = "bookedLabel";
+            this.bookedLabel.Size = new System.Drawing.Size(140, 38);
+            this.bookedLabel.TabIndex = 20;
+            this.bookedLabel.Text = "Booked";
             // 
             // Form1
             // 
@@ -372,9 +373,9 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -384,7 +385,7 @@
         private Panel panel1;
         private Panel panel2;
         private Button searchBtn;
-        private TextBox textBox5;
+        private TextBox searchTb;
         private DataGridView dataGridView1;
         private Panel panel3;
         private Panel panel5;
@@ -394,16 +395,15 @@
         private Button resetBtn;
         private Button exitBtn;
         private Panel panel4;
-        private ComboBox comboBox5;
-        private TextBox textBox4;
-        private ComboBox comboBox4;
-        private TextBox textBox3;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private TextBox textBox2;
-        private ComboBox comboBox1;
-        private TextBox textBox1;
-        private Label label6;
+        private ComboBox bookedCb;
+        private TextBox mileageTb;
+        private ComboBox typeCb;
+        private TextBox colorTb;
+        private ComboBox engineTypeCb;
+        private ComboBox yearCb;
+        private TextBox modelTb;
+        private ComboBox makeCb;
+        private TextBox licensePlateTb;
         private Label licensePlateLabel;
         private Label makeLabel;
         private Label typeLabel;
@@ -412,5 +412,6 @@
         private Label yearLabel;
         private Label colorLabel;
         private Label engineTypeLabel;
+        private Label bookedLabel;
     }
 }
