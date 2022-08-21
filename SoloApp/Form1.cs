@@ -118,5 +118,25 @@ namespace SoloApp
             }
             uploadData();
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                licensePlateTb.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                makeCb.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                modelTb.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                yearCb.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                engineTypeCb.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                colorTb.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                mileageTb.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                typeCb.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                bookedCb.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
