@@ -174,6 +174,7 @@
             this.displayBtn.TabIndex = 25;
             this.displayBtn.Text = "Display";
             this.displayBtn.UseVisualStyleBackColor = true;
+            this.displayBtn.Click += new System.EventHandler(this.displayBtn_Click);
             // 
             // deleteBtn
             // 
@@ -183,6 +184,7 @@
             this.deleteBtn.TabIndex = 24;
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // resetBtn
             // 

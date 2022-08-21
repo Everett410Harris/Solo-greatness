@@ -138,5 +138,48 @@ namespace SoloApp
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void displayBtn_Click(object sender, EventArgs e)
+        {
+            // ability to search using search tb and display that info only
+            try
+            {
+                DataView dv = sqlDt.DefaultView;
+                dv.RowFilter = String.Format("license_plate like '%{0}%'", searchTb.Text);
+                dataGridView1.DataSource = dv.ToTable();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlConn.ConnectionString = "server =" + server + ";"
+               + "username =" + username + ";"
+               + "password =" + password + ";"
+               + "database =" + database;
+
+                sqlConn.Open();
+
+                sqlCmd.CommandText = "delete from transportation.vehicles where license_plate = @license_plate";
+                
+                sqlCmd = new MySqlCommand(sqlQuery, sqlConn);
+                
+                sqlConn.Close();
+
+                foreach(DataGridViewRow item in this.dataGridView1.SelectedRows)
+                {
+                    dataGridView1.Rows.RemoveAt(item.Index);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
