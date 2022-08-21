@@ -165,7 +165,7 @@ namespace SoloApp
 
                 sqlConn.Open();
 
-                sqlCmd.CommandText = "delete from transportation.vehicles where license_plate = @license_plate";
+                sqlCmd.CommandText = "delete from transportationapp.vehicles where license_plate = @license_plate";
                 
                 sqlCmd = new MySqlCommand(sqlQuery, sqlConn);
                 
