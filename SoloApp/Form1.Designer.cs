@@ -41,6 +41,7 @@
             this.resetBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.bookedLabel = new System.Windows.Forms.Label();
             this.bookedCb = new System.Windows.Forms.ComboBox();
             this.mileageTb = new System.Windows.Forms.TextBox();
             this.typeCb = new System.Windows.Forms.ComboBox();
@@ -58,7 +59,6 @@
             this.yearLabel = new System.Windows.Forms.Label();
             this.colorLabel = new System.Windows.Forms.Label();
             this.engineTypeLabel = new System.Windows.Forms.Label();
-            this.bookedLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -203,6 +203,15 @@
             this.panel4.Size = new System.Drawing.Size(1325, 248);
             this.panel4.TabIndex = 12;
             // 
+            // bookedLabel
+            // 
+            this.bookedLabel.AutoSize = true;
+            this.bookedLabel.Location = new System.Drawing.Point(952, 187);
+            this.bookedLabel.Name = "bookedLabel";
+            this.bookedLabel.Size = new System.Drawing.Size(140, 38);
+            this.bookedLabel.TabIndex = 20;
+            this.bookedLabel.Text = "Booked";
+            // 
             // bookedCb
             // 
             this.bookedCb.FormattingEnabled = true;
@@ -343,15 +352,6 @@
             this.engineTypeLabel.TabIndex = 6;
             this.engineTypeLabel.Text = "Engine Type";
             // 
-            // bookedLabel
-            // 
-            this.bookedLabel.AutoSize = true;
-            this.bookedLabel.Location = new System.Drawing.Point(952, 187);
-            this.bookedLabel.Name = "bookedLabel";
-            this.bookedLabel.Size = new System.Drawing.Size(140, 38);
-            this.bookedLabel.TabIndex = 20;
-            this.bookedLabel.Text = "Booked";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 38F);
@@ -368,6 +368,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
