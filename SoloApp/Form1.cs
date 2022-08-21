@@ -13,6 +13,11 @@ namespace SoloApp
         MySqlDataReader sqlRd;
 
         DataSet DS = new DataSet();
+
+        string server = "localhost";
+        string username = "root";
+        string password = "DREADhead2638!";
+        string database = "transporationapp";
         public Form1()
         {
             InitializeComponent();
