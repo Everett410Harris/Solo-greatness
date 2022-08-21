@@ -112,6 +112,11 @@ namespace SoloApp
             {
                 MessageBox.Show(ex.Message);
             }
+            finally
+            {
+                sqlConn.Close();
+            }
+            uploadData();
         }
     }
 }
