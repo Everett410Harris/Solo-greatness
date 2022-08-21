@@ -17,7 +17,7 @@ namespace SoloApp
         string server = "localhost";
         string username = "root";
         string password = "DREADhead2638!";
-        string database = "transporationapp";
+        string database = "transportationapp";
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace SoloApp
 
             sqlConn.Open();
             sqlCmd.Connection = sqlConn;
-            sqlCmd.CommandText = "select * from transportation.vehicles";
+            sqlCmd.CommandText = "select * from transportationapp.vehicles";
             sqlRd = sqlCmd.ExecuteReader();
             sqlDt.Load(sqlRd);
             sqlRd.Close();
