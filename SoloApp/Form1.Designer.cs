@@ -217,6 +217,10 @@
             // bookedCb
             // 
             this.bookedCb.FormattingEnabled = true;
+            this.bookedCb.Items.AddRange(new object[] {
+            "",
+            "Yes",
+            "No"});
             this.bookedCb.Location = new System.Drawing.Point(1103, 184);
             this.bookedCb.Name = "bookedCb";
             this.bookedCb.Size = new System.Drawing.Size(219, 46);
@@ -232,6 +236,13 @@
             // typeCb
             // 
             this.typeCb.FormattingEnabled = true;
+            this.typeCb.Items.AddRange(new object[] {
+            "",
+            "Frieght",
+            "Van",
+            "Sprinter",
+            "SUV",
+            "Sedan"});
             this.typeCb.Location = new System.Drawing.Point(1103, 100);
             this.typeCb.Name = "typeCb";
             this.typeCb.Size = new System.Drawing.Size(219, 46);
@@ -247,6 +258,11 @@
             // engineTypeCb
             // 
             this.engineTypeCb.FormattingEnabled = true;
+            this.engineTypeCb.Items.AddRange(new object[] {
+            "",
+            "Diesiel",
+            "Electric",
+            "Gasoline"});
             this.engineTypeCb.Location = new System.Drawing.Point(696, 100);
             this.engineTypeCb.Name = "engineTypeCb";
             this.engineTypeCb.Size = new System.Drawing.Size(219, 46);
@@ -255,6 +271,21 @@
             // yearCb
             // 
             this.yearCb.FormattingEnabled = true;
+            this.yearCb.Items.AddRange(new object[] {
+            "",
+            "2022",
+            "2021",
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010"});
             this.yearCb.Location = new System.Drawing.Point(696, 14);
             this.yearCb.Name = "yearCb";
             this.yearCb.Size = new System.Drawing.Size(219, 46);
@@ -270,6 +301,14 @@
             // makeCb
             // 
             this.makeCb.FormattingEnabled = true;
+            this.makeCb.Items.AddRange(new object[] {
+            "",
+            "Mercedes",
+            "Ford",
+            "Tesla",
+            "Toyota",
+            "BMW",
+            "Chevrolet"});
             this.makeCb.Location = new System.Drawing.Point(245, 100);
             this.makeCb.Name = "makeCb";
             this.makeCb.Size = new System.Drawing.Size(219, 46);
