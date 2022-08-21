@@ -46,5 +46,25 @@ namespace SoloApp
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+               foreach (Control c in panel4.Controls)
+                {
+                    if (c is TextBox)
+                    {
+                        ((TextBox)c).Clear();
+                    }
+                }
+                searchTb.Clear();
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
