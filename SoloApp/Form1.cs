@@ -24,10 +24,10 @@ namespace SoloApp
         }
         private void uploadData()
         {
-            sqlConn.ConnectionString = "server=" + server + ";"
-               + "username=" + username + ";"
-               + "password=" + password + ";"
-               + "database=" + database;
+            sqlConn.ConnectionString = "server =" + server + ";"
+               + "username =" + username + ";"
+               + "password =" + password + ";"
+               + "database =" + database;
 
             sqlConn.Open();
             sqlCmd.Connection = sqlConn;
