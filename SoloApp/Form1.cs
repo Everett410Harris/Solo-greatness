@@ -42,7 +42,7 @@ namespace SoloApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            uploadData();
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
