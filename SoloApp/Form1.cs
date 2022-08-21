@@ -99,7 +99,7 @@ namespace SoloApp
 
                 sqlConn.Open();
                 // table compoments
-                sqlQuery = "insert into transportationapp.vehicles(id,license_plate,make,model,year,engine,color,mileage,type,booked)" +
+                sqlQuery = "insert into transportationapp.vehicles(license_plate,make,model,year,engine,color,mileage,type,booked)" +
                     "values('" + licensePlateTb.Text + "', '" + makeCb.Text + "', '" + modelTb.Text + "', '" + yearCb.Text + "', '"
                     + engineTypeCb.Text + "', '" + colorTb.Text + "', '" + mileageTb.Text + "', '" + typeCb.Text + "', '" + bookedCb.Text + "')"; 
 
