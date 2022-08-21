@@ -87,5 +87,25 @@ namespace SoloApp
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void addNewBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlConn.ConnectionString = "server =" + server + ";"
+               + "username =" + username + ";"
+               + "password =" + password + ";"
+               + "database =" + database;
+
+                sqlConn.Open();
+                // table compoments
+                sqlQuery = "insert into transportation.vehicles(id,license_plate,make,model,year,engine,color,mileage,type,booked)" +
+                    "values('" + licensePlateTb.Text + "', '" + makeCb.Text + "', '" + modelTb.Text + "', '" + yearCb.Text + "', '" + engineTypeCb.Text + "', '" + colorTb.Text + "', '" + mileageTb.Text + "', '" + typeCb.Text + "', '" + bookedCb.Text + "')"; 
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
