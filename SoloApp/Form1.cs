@@ -59,7 +59,11 @@ namespace SoloApp
                     }
                 }
                 searchTb.Clear();
-                
+                makeCb.Text = "";
+                yearCb.Text = "";
+                engineTypeCb.Text = "";
+                typeCb.Text = "";
+                bookedCb.Text = "";
             }
             catch (Exception ex)
             {
