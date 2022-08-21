@@ -27,5 +27,24 @@ namespace SoloApp
         {
 
         }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult iExit;
+
+                iExit = MessageBox.Show("Do you want to exit?", "Confirm you want to exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (iExit == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
