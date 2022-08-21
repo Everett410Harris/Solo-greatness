@@ -7,7 +7,7 @@ namespace SoloApp
     {
         MySqlConnection sqlConn = new MySqlConnection();
         MySqlCommand sqlCmd = new MySqlCommand();
-        DataTable dt = new DataTable();
+        DataTable sqlDt = new DataTable();
         string sqlQuery;
         MySqlDataAdapter DtA = new MySqlDataAdapter();
         MySqlDataReader sqlRd;
@@ -21,6 +21,23 @@ namespace SoloApp
         public Form1()
         {
             InitializeComponent();
+        }
+        private void uploadData()
+        {
+            sqlConn.ConnectionString = "server=" + server + ";"
+               + "username=" + username + ";"
+               + "password=" + password + ";"
+               + "database=" + database;
+
+            sqlConn.Open();
+            sqlCmd.Connection = sqlConn;
+            sqlCmd.CommandText = "select * from transportation.vehicles";
+            sqlRd = sqlCmd.ExecuteReader();
+            sqlDt.Load(sqlRd);
+            sqlRd.Close();
+            sqlConn.Close();
+
+            dataGridView1.DataSource = sqlDt;
         }
 
         private void Form1_Load(object sender, EventArgs e)
